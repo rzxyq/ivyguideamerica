@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +8,24 @@
     <meta name="author" content="">
     <title>Ivyguideamerica</title>
     <!-- core CSS -->
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="static/css/animate.min.css" rel="stylesheet">
-    <link href="static/css/owl.carousel.css" rel="stylesheet">
-    <link href="static/css/owl.transitions.css" rel="stylesheet">
-    <link href="static/css/prettyPhoto.css" rel="stylesheet">
-    <link href="static/css/main.css" rel="stylesheet">
-    <link href="static/css/responsive.css" rel="stylesheet">
+    <link href='{% static "css/bootstrap.min.css" %}' rel="stylesheet">
+    <link href='{% static "css/font-awesome.min.css" %}' rel="stylesheet">
+    <link href='{% static "css/animate.min.css" %}' rel="stylesheet">
+    <link href='{% static "css/owl.carousel.css" %}' rel="stylesheet">
+    <link href='{% static "css/owl.transitions.css" %}' rel="stylesheet">
+    <link href='{% static "css/prettyPhoto.css" %}' rel="stylesheet">
+    <link href='{% static "css/main.css" %}' rel="stylesheet">
+    <link href='{% static "css/responsive.css" %}' rel="stylesheet">
+
     <!--[if lt IE 9]>
-    <script src="static/js/html5shiv.js"></script>
-    <script src="static/js/respond.min.js"></script>
+    <script src='{% static "js/html5shiv.js" %}'></script>
+    <script src='{% static "js/respond.min.js" %}'></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="static/images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="static/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href='{% static "images/ico/favicon.ico" %}'>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href='{% static "images/ico/apple-touch-icon-144-precomposed.png" %}'>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href='{% static "images/ico/apple-touch-icon-114-precomposed.png" %}'>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href='{% static "images/ico/apple-touch-icon-72-precomposed.png" %}'>
+    <link rel="apple-touch-icon-precomposed" href='{% static "images/ico/apple-touch-icon-57-precomposed.png" %}'>
 </head><!--/head-->
 
 <body id="home" class="homepage">
@@ -32,7 +34,7 @@
 
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url(static/images/slider/bg3.jpg);">
+            <div class="item" style="background-image: url('static/images/slider/bg3.jpg');">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -48,7 +50,7 @@
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url(static/images/slider/bg4.jpg);">
+             <div class="item" style="background-image: url('static/images/slider/bg4.jpg');">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
@@ -74,9 +76,18 @@
                     <p>We provide interview and consultation sessions to assist students with their preparation to apply for American college admissions. We create individualized reports outlining strengths, areas of improvement and action plans in order of priority.  We work with students from all over the world and help them with the general American college admissions process including academics (GPA/TOEFL/SAT/AP), extracurricular activities, references, personal statements, essay questions, choosing a college and a major. 
                     </p>
                 </div>
-                <div class="col-sm-3 text-right">
+                <div class="col-sm-3 text-right" id="contact">
                     <a class="btn btn-primary btn-lg" href="#">Contact Us!</a>
+                    <h3>Contact Info</h3>
+
+                            <address>
+                              <strong>Twitter, Inc.</strong><br>
+                              795 Folsom Ave, Suite 600<br>
+                              San Francisco, CA 94107<br>
+                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
                 </div>
+
             </div>
         </div>
     </section><!--/#cta-->
@@ -89,7 +100,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
-                    <img class="img-responsive" src="static/images/main-feature_book.jpg" alt="">
+                    <img class="img-responsive" src='{% static "images/main-feature_book.jpg" alt="" %}'>
                 </div>
                 <div class="col-sm-6">
                     <div class="media service-box wow fadeInRight">
@@ -278,7 +289,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="static/images/team/elvin1.jpg" alt="">
+                            <img class="img-responsive" src='{% static "images/team/elvin1.jpg" alt="" %}'>
                         </div>
                         <div class="team-info">
                             <h3>Elvin R. Freytes</h3>
@@ -296,7 +307,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="static/images/team/alex.jpg" alt="">
+                            <img class="img-responsive" src='{% static "images/team/alex.jpg" alt="" %}'>
                         </div>
                         <div class="team-info">
                             <h3>Alex Addy</h3>
@@ -314,7 +325,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="static/images/team/bessie.jpg" alt="">
+                            <img class="img-responsive" src='{% static "images/team/bessie.jpg" alt="" %}'>
                         </div>
                         <div class="team-info">
                             <h3>Bessie</h3>
@@ -332,7 +343,7 @@
                 <div class="col-sm-6 col-md-3">
                     <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
                         <div class="team-img">
-                            <img class="img-responsive" src="static/images/team/ruoyan.jpg" alt="">
+                            <img class="img-responsive" src='{% static "images/team/ruoyan.jpg" alt="" %}'>
                         </div>
                         <div class="team-info">
                             <h3>Ruoyan Qin</h3>
@@ -352,7 +363,6 @@
             <div class="divider"></div>
 
             <div class="row">
-
                 <div class="col-sm-8" id='faq'>
                     <h3 class="column-title">Faqs</h3>
                     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -360,13 +370,13 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Enim eiusmod high life accusamus
+                                        Who are your SAT tutors?
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum.
+                                    We hand-pick tutors who combine high academic achievement with a passion for teaching. Our instructors are graduates of top universities, have scored in the 99th percentile on the SAT, and are experts in teaching standardized tests. Meet some of our SAT instructors and tutors here.
                                 </div>
                             </div>
                         </div>
@@ -374,13 +384,15 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Nihil anim keffiyeh helvetica
+                                        Do your tutors help with every section of the SAT?
+
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum.
+                                    We have some tutors on staff who can cover all three sections of the SAT (Critical Reading, Math, Writing) and some who specialize in either the verbal or math. We will work with you to find a tutor who will be the best fit for your needs. During a tutoring session, you can choose to cover all three SAT sections or just focus on the areas that you need particular help with.
+
                                 </div>
                             </div>
                         </div>
@@ -388,16 +400,141 @@
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Vegan excepteur butcher vice lomo
+                                        How long are your tutoring sessions?
+
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                 <div class="panel-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum.
+                                    Our SAT tutoring sessions are typically 2 hours in length. Of course, we are flexible and we can extend the tutoring session if requested. 
                                 </div>
                             </div>
                         </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      What is covered in a typical 2-hour tutoring session?
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Every tutoring session is different. We completely customize our sessions to the needs of the student. A typical tutoring session might include an overview of the SAT, building unfamiliar concepts, working through practice problems, or reinforcing tips and strategies. 
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How much tutoring do I need?
+
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                 For students without prior SAT preparation, we recommend the 28-hour tutoring program. However, you may build a custom program that fits your needs and budget. The factors that you should consider when determining how much tutoring you need are your score improvement goal, the amount of time before your SAT test date, and your budget. For our 28 hour program, we see on average a 200 point improvement in the student and it takes approximately 2.5 months to complete if scheduled on a weekly basis. 
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        How much homework do you assign?
+
+
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                At Ivy Global, we understand students are busy with school work and extra-curricular activities. During the session, the tutor will discuss with the student how many hours they can devote to SAT preparation and will assign an appropriate level of homework for the student. For weekly sessions, a typical amount of homework may be 2-4 hours per week. 
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                     When can I arrange SAT tutoring? 
+
+
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                 SAT tutoring can be arranged on both weekdays and weekends. The dates and times (Monday-Sunday: 10am-9pm) are very flexible and depend on the availability of our tutors. Most students arrange tutoring on a weekly basis, but we can also accommodate less frequent tutoring as well as intensive preparation. 
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What is your cancellation policy? 
+
+
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                 For any tutoring session that is cancelled at least 48 hours beforehand, no cancellation fee will be incurred. For sessions cancelled within 48 hours, a fee equivalent to 1 hour of tutoring will be charged. 
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                     What if I am not happy with my tutor? 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                 
+At Ivy Global, we only hire the best. We are confident that you will find each of our tutors engaging and effective as instructors. If for whatever reason you are not satisfied with your tutor, please contact us immediately and we will do our best to make any necessary adjustments.
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you offer tutoring for other subjects? 
+
+
+
+
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                            Many of our tutors have experience and expertise in a wide variety of subjects. We offer general academic tutoring for students in Grades 5-12 to supplement school work and for test preparation. Learn more
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -408,87 +545,48 @@
     <section id="animated-number">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Fun Facts</h2>
-                <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
+                <h2 class="section-title text-center wow fadeInDown">About Our Tutoring</h2>
+                <p class="text-center wow fadeInDown">
+                <p>Ivy Guide America is a leader in private tutoring for the SAT,TOELF or AP Students meet 1-on-1 with one of our expert instructors at Zhengzhou-Henan,China and New York,America at the time that best fits the their needs. Our tutoring program is completely tailored to the needs of our students and also designed to deliver the most comprehensive, effective and engaging SAT,TOELF and AP preparation available. Our tutors have a wealth of experience and students can choose to focus equally on all areas the SAT, ,TOELF and AP,or concentrate on a particular area of weakness. </p>
+                We provide: Languages,Math and Science,Literature and History,
+                English Grammar, Math level 1, America History 
+                Speaking, Math level 2 
 
-            <div class="row text-center">
-                <div class="col-sm-3 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
-                        <div class="animated-number" data-digit="2305" data-duration="1000"></div>
-                        <strong>CUPS OF COFFEE CONSUMED</strong>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
-                        <div class="animated-number" data-digit="1231" data-duration="1000"></div>
-                        <strong>CLIENT WORKED WITH</strong>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
-                        <div class="animated-number" data-digit="3025" data-duration="1000"></div>
-                        <strong>PROJECT COMPLETED</strong>
-                    </div>
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
-                        <div class="animated-number" data-digit="1199" data-duration="1000"></div>
-                        <strong>QUESTIONS ANSWERED</strong>
-                    </div>
-                </div>
             </div>
         </div>
     </section><!--/#animated-number-->
 
  
 
-    <section id="testimonial">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
+  
 
-                    <div id="carousel-testimonial" class="carousel slide text-center" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <p><img class="img-circle img-thumbnail" src="static/images/testimonial/1.jpg" alt=""></p>
-                                <h4>Student 1</h4>
-                                <small>XXX University</small>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            </div>
-                            <div class="item">
-                                <p><img class="img-circle img-thumbnail" src="static/images/testimonial/01.jpg" alt=""></p>
-                                <h4>Student 2</h4>
-                                <small>XXX</small>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            </div>
-                        </div>
+  <section id="contact">
+        <!--<div id="google-map" style="height:650px" data-latitude="52.365629" data-longitude="4.871331"></div>-->
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-8">
+                        <div class="contact-form">
+                            <h3>Contact Info</h3>
 
-                        <!-- Controls -->
-                        <div class="btns">
-                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="prev">
-                                <span class="fa fa-angle-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="btn btn-primary btn-sm" href="#carousel-testimonial" role="button" data-slide="next">
-                                <span class="fa fa-angle-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                            <address>
+                              <strong>Twitter, Inc.</strong><br>
+                              795 Folsom Ave, Suite 600<br>
+                              San Francisco, CA 94107<br>
+                              <abbr title="Phone">P:</abbr> (123) 456-7890
+                            </address>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!--/#testimonial-->
-
-  
+    </section><!--/#bottom-->
 
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2014 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+                    &copy; 2016 Ivyguideamerica. </a>
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">
@@ -508,16 +606,16 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
+    <script src='{% static "js/jquery.js" %}'></script>
+    <script src='{% static "js/bootstrap.min.js" %}'></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="static/js/owl.carousel.min.js"></script>
-    <script src="static/js/mousescroll.js"></script>
-    <script src="static/js/smoothscroll.js"></script>
-    <script src="static/js/jquery.prettyPhoto.js"></script>
-    <script src="static/js/jquery.isotope.min.js"></script>
-    <script src="static/js/jquery.inview.min.js"></script>
-    <script src="static/js/wow.min.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src='{% static "js/owl.carousel.min.js" %}'></script>
+    <script src='{% static "js/mousescroll.js" %}'></script>
+    <script src='{% static "js/smoothscroll.js" %}'></script>
+    <script src='{% static "js/jquery.prettyPhoto.js" %}'></script>
+    <script src='{% static "js/jquery.isotope.min.js" %}'></script>
+    <script src='{% static "js/jquery.inview.min.js" %}'></script>
+    <script src='{% static "js/wow.min.js" %}'></script>
+    <script src='{% static "js/main.js" %}'></script>
 </body>
 </html>
